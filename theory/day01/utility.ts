@@ -43,12 +43,12 @@ type Source = {
 };
 type Subway = Bread & Cheese & Topping & Vegetable & Source;
 
-type Student = {
+type Student1 = {
   name: string;
   age: number;
   major: string;
 };
-type Test = Pick<Student, "name" | "age">;
-type Test1 = Omit<Student, "major">;
+type Test = Pick<Student1, "name" | "age">;
+type Test1 = Omit<Student1, "major">;
 type WithoutSource = Omit<Subway, "source">;
 type Submorning = Omit<Subway, "vegetable">;
