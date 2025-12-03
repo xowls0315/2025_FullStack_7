@@ -15,7 +15,7 @@ type Props = {
 
 export const TodoList = ({ todos, filteredTodos, onToggle, onDelete, onEdit, onSubtaskToggle, onReorder }: Props) => {
   const sensors = useSensors(
-    useSensor<PointerSensor>(PointerSensor, {
+    useSensor(PointerSensor, {
       activationConstraint: { distance: 8 },
     })
   );
