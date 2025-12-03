@@ -23,3 +23,12 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* 다크 모드에서 date input 달력 아이콘을 밝게 */
+.dark .date-input::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+
+.dark .date-input {
+  color-scheme: white;
+}

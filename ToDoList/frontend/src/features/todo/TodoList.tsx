@@ -1,5 +1,5 @@
 import { DndContext, type DragEndEvent, PointerSensor, useSensor, useSensors } from "@dnd-kit/core";
-import { SortableContext, arrayMove, verticalListSortingStrategy } from "@dnd-kit/sortable";
+import { SortableContext, verticalListSortingStrategy } from "@dnd-kit/sortable";
 import type { Todo } from "@/src/features/todo/types";
 import { SortableTodo } from "@/src/features/todo/SortableTodo";
 

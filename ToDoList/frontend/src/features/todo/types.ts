@@ -14,4 +14,11 @@ export type Todo = {
   syncing: boolean;
 };
 
-
+// ✅ 폼에서 사용하는 상태를 공용 타입으로 분리
+export type TodoFormState = {
+  id: string;
+  title: string;
+  description: string;
+  date: string;
+  subtasks: Subtask[];
+};

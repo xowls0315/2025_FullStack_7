@@ -1,13 +1,5 @@
 import type { FormEvent } from "react";
-import type { Subtask } from "@/src/features/todo/types";
-
-type TodoFormState = {
-  id: string;
-  title: string;
-  description: string;
-  date: string;
-  subtasks: Subtask[];
-};
+import type { Subtask, TodoFormState } from "@/src/features/todo/types";
 
 type Props = {
   form: TodoFormState;
@@ -39,7 +31,7 @@ export const TodoForm = ({ form, subtaskDraft, onChangeForm, onChangeSubtaskDraf
             type="date"
             value={form.date}
             onChange={(e) => onChangeForm({ ...form, date: e.target.value })}
-            className="w-full rounded-2xl border border-slate-200 px-4 py-3 outline-none transition focus:border-indigo-400 dark:border-zinc-700 dark:bg-zinc-900"
+            className="date-input w-full rounded-2xl border border-slate-200 px-4 py-3 outline-none transition focus:border-indigo-400 dark:border-zinc-700 dark:bg-zinc-900"
           />
         </label>
       </div>
